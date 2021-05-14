@@ -1,4 +1,4 @@
-{% set payment_methods = get_payment_methods(table={{ ref('raw_payments') }}, column='payment_method') %}
+{% set payment_methods = get_payment_methods(table=ref('raw_payments'), column='payment_method') %}
 
 with orders as (
 

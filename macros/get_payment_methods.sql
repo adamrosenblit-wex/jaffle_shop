@@ -3,7 +3,7 @@
 {% set payment_methods_query %}
 
   select distinct {{ column }}
-  from table
+  from {{ table }}
   order by 1
 
 {% endset %}
